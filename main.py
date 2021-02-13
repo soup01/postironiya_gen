@@ -14,7 +14,7 @@ with open("img.jpg", "wb") as out:
 panch = requests.get(f"https://fish-text.ru/get?{'&type=sentence&number=1'}")
 text = json.loads(panch.text)["text"]
 
-# этот кусок код делит текст на 2 части
+# этот кусок кода делит текст на 2 части
 a = 0
 upper_text = ""
 lower_text = ""
